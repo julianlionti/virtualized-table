@@ -1,0 +1,67 @@
+{
+  "name": "virtualized-crud",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/virtualized-crud.cjs",
+      "import": "./dist/virtualized-crud.es.js"
+    },
+    "./styles.css": {
+      "require": "./dist/styles.css",
+      "default": "./dist/styles.css"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "@storybook/addon-essentials": "7.5.3",
+    "@storybook/addon-interactions": "7.5.3",
+    "@storybook/addon-links": "7.5.3",
+    "@storybook/addon-onboarding": "1.0.8",
+    "@storybook/blocks": "7.5.3",
+    "@storybook/react": "7.5.3",
+    "@storybook/react-vite": "7.5.3",
+    "@storybook/testing-library": "0.2.2",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-window": "^1.8.8",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-storybook": "^0.6.15",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "7.5.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.5.0",
+    "vite-plugin-dts": "^3.6.3",
+    "vite-tsconfig-paths": "^4.2.1"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.17",
+    "react": "18.3.0-canary-6b3834a45-20231110",
+    "react-dom": "18.3.0-canary-6b3834a45-20231110",
+    "react-hook-form": "^7.48.2",
+    "react-virtualized-auto-sizer": "^1.0.20",
+    "react-virtuoso": "^4.6.2",
+    "react-window": "^1.8.9"
+  }
+}
